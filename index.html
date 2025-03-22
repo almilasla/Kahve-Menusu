@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kahve Menüsü</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .menu-container {
+            max-width: 90%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .category {
+            margin-bottom: 30px;
+        }
+        .category h2 {
+            color: #444;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        .menu-item {
+            margin-bottom: 20px;
+        }
+        .menu-item img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+        }
+        .menu-item h3 {
+            margin: 10px 0;
+            color: #333;
+            font-size: 1.5em;
+        }
+        .menu-item p {
+            color: #666;
+            font-size: 1em;
+        }
+        @media (max-width: 600px) {
+            .menu-container {
+                padding: 15px;
+            }
+            .menu-item h3 {
+                font-size: 1.3em;
+            }
+            .menu-item p {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h1>Kahve Menüsü</h1>
+        
+        <!-- Sıcak Kahveler -->
+        <div class="category">
+            <h2>Sıcak Kahveler</h2>
+            <div class="menu-item" id="Espresso">
+                <img src="images/Espresso.png" alt="Espresso">
+                <h3>Espresso</h3>
+                <p>Yoğun aromalı, sade kahve.</p>
+            </div>
+            <div class="menu-item" id="Americano">
+                <img src="images/Americano.png" alt="Americano">
+                <h3>Americano</h3>
+                <p>Amerikan kahvesi, sade ve güçlü.</p>
+            </div>
+            <div class="menu-item" id="Latte">
+                <img src="images/Latte.jgp" alt="Latte">
+                <h3>Latte</h3>
+                <p>kremsi süt ile harmanlanmış espresso, hafif ve dengeli bir kahve deneyimi sunar.</p>
+            </div>
+            <div class="menu-item" id="Cappuccino">
+                <img src="images/Cappuccino.png" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>Espresso, süt ve süt köpüğünün harika karışımı.</p>
+            </div>
+            <div class="menu-item" id="Coconut-Latte">
+                <img src="images/Coconut Latte.jpeg" alt="Coconut Latte">
+                <h3>Coconut Latte</h3>
+                <p>Hindistancevizi aromalı latte.</p>
+            </div>
+            <div class="menu-item" id="Espresso-Macchiato">
+                <img src="images/Espresso Macchiato.png" alt="Espresso Macchiato">
+                <h3>Espresso Macchiato</h3>
+                <p>Sade espressoya az miktarda süt eklenir.</p>
+            </div>
+            <div class="menu-item" id="Filtre-Kahve">
+                <img src="images/Filtre Kahve.png" alt="Filtre Kahve">
+                <h3>Filtre Kahve</h3>
+                <p>Yoğun, sade filtre kahve.</p>
+            </div>
+            <div class="menu-item" id="Flat-White">
+                <img src="images/Flat White.png" alt="Flat White">
+                <h3>Flat White</h3>
+                <p> yoğun espresso ve hafif buharda ısıtılmış süt karışımı.</p>
+            </div>
+            <div class="menu-item" id="Caramel-Macchiato">
+                <img src="images/Caramel Macchiato.png" alt="Caramel Macchiato">
+                <h3>Caramel Macchiato</h3>
+                <p>Espresso ve karamelin mükemmel uyumu.</p>
+            </div>
+            <div class="menu-item" id="Misto">
+                <img src="images/Misto.png" alt="Misto">
+                <h3>Misto</h3>
+                <p>Sütlü filtre kahve.</p>
+            </div>
+            <div class="menu-item" id="Mocha">
+                <img src="images/Mocha.png" alt="Mocha">
+                <h3>Mocha</h3>
+                <p>Kakao ve kahvenin eşsiz uyumu.</p>
+            </div>
+            <div class="menu-item" id="Türk-Kahvesi">
+                <img src="images/Türk Kahvesi.png" alt="Türk Kahvesi">
+                <h3>Türk Kahvesi</h3>
+                <p>Geleneksel Türk kahvesi, yoğun kıvamlı.</p>
+            </div>
+            <div class="menu-item" id="Çay">
+                <img src="images/Çay.jpeg" alt="Çay">
+                <h3>Çay</h3>
+                <p>Türk çayı, sıcak ve taze dem.</p>
+            </div>
+        </div>
+        
+        <!-- Soğuk Kahveler -->
+        <div class="category">
+            <h2>Soğuk Kahveler</h2>
+            <div class="menu-item" id="Affogato">
+                <img src="images/Affogato.png" alt="Affogato">
+                <h3>Affogato</h3>
+                <p>Vanilyalı dondurma üzerine sıcak espresso.</p>
+            </div>
+            <div class="menu-item" id="Caramel-Frappuccino">
+                <img src="images/Caramel Frappuccino.png" alt="Caramel Frappuccino">
+                <h3>Caramel Frappuccino</h3>
+                <p>Soğuk karamel frappuccino.</p>
+            </div>
+            <div class="menu-item" id="Ice-Coconut-Latte">
+                <img src="images/Ice Coconut Latte.png" alt="Ice Coconut Latte">
+                <h3>Ice Coconut Latte</h3>
+                <p>Hindistancevizi aromalı soğuk latte.</p>
+            </div>
+            <div class="menu-item" id="Coffee-Frappuccino">
+                <img src="images/Coffee Frappuccino.png" alt="Coffee Frappuccino">
+                <h3>Coffee Frappuccino</h3>
+                <p>Soğuk kahve, buz ve karışım.</p>
+            </div>
+            <div class="menu-item" id="Cold-Brew-Float">
+                <img src="images/Cold Brew Float.jpg" alt="Cold Brew Float">
+                <h3>Cold Brew Float</h3>
+                <p>Soğuk demleme kahve ve dondurma.</p>
+            </div>
+            <div class="menu-item" id="Cold-Brew-Latte">
+                <img src="images/Cold Brew Latte.png" alt="Cold Brew Latte">
+                <h3>Cold Brew Latte</h3>
+                <p>Soğuk demleme kahve ve süt karışımı.</p>
+            </div>
+            <div class="menu-item" id="Cold-Brew">
+                <img src="images/Cold Brew.png" alt="Cold Brew">
+                <h3>Cold Brew</h3>
+                <p>Soğuk demleme kahve, serinletici ve lezzetli.</p>
+            </div>
+	    <div class="menu-item" id="Ice-Flat-White">
+                <img src="images/Ice Flat White.jpeg" alt="Ice Flat White">
+                <h3>Ice Flat White</h3>
+                <p>yoğun espresso ve soğuk süt karışımı.</p>
+            </div>
+            <div class="menu-item" id="Cool-Lime">
+                <img src="images/Cool Lime.png" alt="Cool Lime">
+                <h3>Cool Lime</h3>
+                <p> Misket limonu aromalı buzlu içecek.</p>
+            </div>
+            <div class="menu-item" id="Espresso-Frappuccino">
+                <img src="images/Espresso Frappuccino.png" alt="Espresso Frappuccino">
+                <h3>Espresso Frappuccino</h3>
+                <p>Soğuk espresso ve buz karışımı.</p>
+            </div>
+            <div class="menu-item" id="Ice-Americano">
+                <img src="images/Ice Americano.png" alt="Ice Americano">
+                <h3>Ice Americano</h3>
+                <p>Soğuk su ve buz ile hazırlanan Americano.</p>
+            </div>
+            <div class="menu-item" id="Ice-Cappuccino">
+                <img src="images/Ice Cappuccino.png" alt="Ice Cappuccino">
+                <h3>Ice Cappuccino</h3>
+                <p>Soğuk cappuccino, süt ve buz.</p>
+            </div>
+            <div class="menu-item" id="Ice-Caramel-Macchiato">
+                <img src="images/Ice Caramel Macchiato.png" alt="Ice Caramel Macchiato">
+                <h3>Ice Caramel Macchiato</h3>
+                <p>Soğuk karamel ve buz karışımı.</p>
+            </div>
+            <div class="menu-item" id="Ice-Mocha">
+                <img src="images/Ice Mocha.png" alt="Ice Mocha">
+                <h3>Ice Mocha</h3>
+                <p>Soğuk mocha, çikolata ve buz.</p>
+            </div>
+            <div class="menu-item" id="Ice-White-Chocolate-Mocha">
+                <img src="images/Ice White Chocolate Mocha.png" alt="Ice White Chocolate Mocha">
+                <h3>Ice White Chocolate Mocha</h3>
+                <p>Soğuk beyaz çikolatalı mocha.</p>
+            </div>
+            <div class="menu-item" id="Java-Chip-Frappuccino">
+                <img src="images/Java Chip Frappuccino.png" alt="Java Chip Frappuccino">
+                <h3>Java Chip Frappuccino</h3>
+                <p>Yoğun çikolata parçacıkları ve kahve.</p>
+            </div>
+            <div class="menu-item" id="White-Chocolate-Mocha-Frappuccino">
+                <img src="images/White Chocolate Mocha Frappuccino.png" alt="White Chocolate Mocha Frappuccino">
+                <h3>White Chocolate Mocha Frappuccino</h3>
+                <p>Beyaz çikolata ve kahve frappuccino.</p>
+            </div>
+ <div class="menu-item" id="White-Chocolate-Mocha">
+                <img src="images/White Chocolate Mocha.png" alt="White Chocolate Mocha">
+                <h3>White Chocolate Mocha</h3>
+                <p>Beyaz çikolata sosu, espresso ve soğuk sütle birleşerek, tatlı ve kremsi bir tat.</p>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        // QR koddan girildiğinde belirli bir kahveye yönlendirme
+        const urlParams = new URLSearchParams(window.location.search);
+        const section = urlParams.get('kahve');
+        if (section) {
+            document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
